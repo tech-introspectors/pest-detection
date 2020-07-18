@@ -22,6 +22,7 @@ header {
     background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .logo {
@@ -31,6 +32,7 @@ header {
 .logo a {
     padding: 70px;
     font-size: 2rem;
+    letter-spacing: 4px;
     font-weight: 600;
     line-height: 2;
     text-decoration: none;
@@ -70,18 +72,13 @@ header {
     transition: 0.5s;
 }
 
-.container {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 50%;
-    transform: translate(-50%, -40%);
-    text-align: center;
-}
-
 .banner-content {
+    position: relative;
+    top: 40%;
+    text-align: center;
+    width: 100%;
     padding: 40px;
-    background-color: rgba(0, 0, 0, 0.4);
+    /*    background-color: rgba(0, 0, 0, 0.4);*/
 }
 
 .banner-content h1 {
@@ -119,7 +116,7 @@ header {
 
 /* ////NavBar in mobile view //// */
 
-@media screen and (max-width:1010px) {
+@media screen and (max-width:1031px) {
     .topnav .menu-center {
         display: none;
     }
@@ -146,6 +143,8 @@ header {
         color: #fff;
         font-size: 2rem;
         outline: none;
+        position: fixed;
+        z-index: 1;
     }
 
     .menuArea {
