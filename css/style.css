@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #000;
+}
+
 header {
     background-image:
         linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
@@ -99,11 +103,10 @@ header {
 
 .banner-content p {
     color: #fff;
-    font-size: 15px;
+    font-size: 20px;
     font-family: sans-serif;
     font-weight: 600;
     line-height: 1.4;
-    margin: 40px 50px;
 }
 
 .bars .menu-bar i {
@@ -192,4 +195,63 @@ header {
 
 }
 
-@media screen and (max-width: 480px) {}
+/*//// handling mobile-view ////*/
+
+@media screen and (max-width: 411px) {
+    header {
+        background-image:
+            linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+            url('../images/banner_bg.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 50vh;
+        transform: 0.5s;
+
+    }
+
+    .menuArea {
+        position: relative;
+        top: 18%;
+        width: 100%;
+    }
+
+
+    .banner-content h1 {
+        font-size: 2.3rem;
+        letter-spacing: 1.5px;
+        color: #fff;
+        text-transform: capitalize;
+        padding-top: 0px;
+        font-family: 'Candal';
+    }
+
+    .banner-content h1 .bright {
+        color: #04d90b;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #fff;
+    }
+
+    .banner-content p {
+        display: none;
+    }
+
+}
+
+/*//// Landscap in mobile-view ////*/
+@media screen and (max-width:731px) {
+    .menuArea {
+        position: relative;
+        top: 16%;
+        width: 100%;
+    }
+
+    #menuContent {
+        position: absolute;
+        padding-top: 30px;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+
+    }
+}
