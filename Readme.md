@@ -1,1 +1,1 @@
-**Pest detection in Agriculture using Machine learning**
+**Pest detection in Agriculture using Machine learning.**
