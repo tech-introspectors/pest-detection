@@ -1,6 +1,5 @@
 $(window).ready(function () {
-    $("#bars").click(function () {
-        $("#menuContent").slideToggle("slow");
+    $("#menuToggle i").click(function () {
+        $("#menuContent").slideToggle();
     });
-
 });
