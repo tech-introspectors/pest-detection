@@ -79,10 +79,11 @@ header {
 
 .banner-content {
     position: relative;
-    top: 40%;
     text-align: center;
+    top: 40%;
     width: 100%;
-    padding: 40px;
+    height: 30%;
+    padding: 0px;
 }
 
 .banner-content h1 {
@@ -120,7 +121,7 @@ header {
 /*//// arrow bounce ////*/
 .arrow {
     text-align: center;
-    margin: 23% 0;
+    margin: 5% 0;
 }
 
 .arrow a {
@@ -156,7 +157,7 @@ header {
 
 /* ////NavBar in mobile view //// */
 
-@media screen and (max-width:1031px) {
+@media(max-width:1031px) {
     .topnav .menu-center {
         display: none;
     }
@@ -231,149 +232,39 @@ header {
 
     .arrow {
         text-align: center;
-        margin: 30% 0;
+        margin: 5% 0;
     }
 
 }
 
-/*//// Landscap in mobile-view ////*/
-@media screen and (max-width:731px) {
-    .menuArea {
-        position: relative;
-        top: 10%;
-        width: 100%;
-    }
-
-    #menuContent {
-        position: absolute;
-        padding-top: 30px;
-        width: 100%;
-        height: 55vh;
-        background-color: rgba(0, 0, 0, 0.9);
-        z-index: 1;
-
-    }
-}
-
-/*//// handling mobile-view ////*/
-
-@media(max-width: 411px) {
-    header {
-        background-image:
-            linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-            url('../images/banner_bg.jpg');
-        background-position: center;
-        background-size: cover;
-        height: 50vh;
-        transform: 0.5s;
-
-    }
-
-    .menuArea {
-        position: relative;
-        top: 18%;
-        width: 100%;
-    }
-
-
-    .banner-content h1 {
-        font-size: 2.3rem;
-        letter-spacing: 1.5px;
-        color: #fff;
-        text-transform: capitalize;
-        padding-top: 0px;
-        font-family: 'Candal';
-    }
-
-    .banner-content h1 .bright {
-        color: #04d90b;
-        padding-bottom: 10px;
-        border-bottom: 3px solid #fff;
-    }
-
-    .banner-content p {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width:375px) {
-
+@media {
     .logo a {
-        padding: 50px;
-        font-size: 1.8rem;
-        letter-spacing: 4px;
-        font-weight: 600;
-        line-height: 2.5;
-        text-decoration: none;
-        color: #fff;
-        font-family: 'Cairo', 'Candal', 'sans-serif';
-    }
-
-    .banner-content h1 {
-        font-size: 2.3rem;
-        letter-spacing: 1.5px;
-        color: #fff;
-        margin-top: -20%;
-        text-transform: capitalize;
-        padding-top: 0px;
-        font-family: 'Candal';
-    }
-
-    .banner-content h1 .bright {
-        color: #04d90b;
+        padding: 40px;
         font-size: 2rem;
-        padding-bottom: 10px;
-        border-bottom: 3px solid #fff;
-    }
-
-    .arrow {
-        text-align: center;
-        margin: 60% 0;
-
-    }
-
-    .arrow a {
-        font-size: 40px;
+        letter-spacing: 4px;
+        font-weight: 600;
+        line-height: 2;
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Cairo', 'Candal', 'sans-serif';
     }
 }
 
-@media screen and (max-width:360px) {
+@media (min-width:294px) and (max-width:360px) {
     .logo a {
-        padding: 50px;
-        font-size: 1.6rem;
+        padding: 20px;
+        font-size: 1.5rem;
         letter-spacing: 4px;
         font-weight: 600;
-        line-height: 2.5;
+        line-height: 2.7;
         text-decoration: none;
         color: #fff;
         font-family: 'Cairo', 'Candal', 'sans-serif';
     }
 
-    .banner-content h1 {
-        font-size: 2.5rem;
-        letter-spacing: 1.5px;
-        color: #fff;
-        text-transform: capitalize;
-        padding-top: 0px;
-        margin-top: -10%;
-        font-family: 'Candal';
-    }
-
-    .banner-content h1 .bright {
-        color: #04d90b;
-        font-size: 1.9rem;
-        padding-bottom: 5px;
-        border-bottom: 3px solid #fff;
-    }
-
     .arrow {
         text-align: center;
-        margin: 50% 0;
-
+        margin: 10% 0;
     }
 
-    .arrow a {
-        font-size: 40px;
-    }
 }

@@ -1,5 +1,7 @@
 $(window).ready(function () {
     $("#menuToggle i").click(function () {
-        $("#menuContent").slideToggle();
+        $("#menuContent").slideToggle().css({
+            cursor: "poiner"
+        });
     });
 });
