@@ -4,27 +4,193 @@
     box-sizing: border-box;
 }
 
+header {
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+        url('../images/banner_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+/*/////  NavBar css section /////*/
+
 .topnav {
     position: relative;
     overflow: hidden;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    width: 100%;
 }
 
-
-.nav {
-    float: right;
-    background-color: black;
-    padding: 15px 40px;
+.logo {
+    float: left;
 }
 
-.nav a {
+.logo a {
+    padding: 70px;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2;
     text-decoration: none;
-    font-size: 20px;
-    padding: 20px;
     color: #fff;
+    font-family: 'Cairo', 'Candal', 'sans-serif';
 }
 
-.nav a:hover {
-    background-color: #3e3e3e;
-    border-bottom: 2px solid blue;
+.topnav .menu-center {
+    text-align: center;
+
 }
+
+.topnav .menu-center a {
+    color: #000;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 1.2rem;
+    line-height: 4;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.topnav .menu-center .menu:hover {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #03fc0b;
+    transition: 0.5s;
+}
+
+
+.topnav .menu-center .right {
+    float: right;
+    padding: 0px 40px;
+}
+
+.topnav .menu-center .right:hover {
+    background-color: #02c908;
+    transition: 0.5s;
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+}
+
+.banner-content {
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner-content h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-transform: capitalize;
+    padding-top: 30px;
+    font-family: 'Candal';
+    margin-bottom: 15px;
+    line-height: 2;
+}
+
+.banner-content h1 .bright {
+    color: #04d90b;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #fff;
+}
+
+.banner-content p {
+    color: #fff;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 40px 50px;
+}
+
+.bars .menu-bar i {
+    display: none;
+}
+
+#menuContent {
+    display: none;
+}
+
+/* ////NavBar in mobile view //// */
+
+@media screen and (max-width:1010px) {
+    .topnav .menu-center {
+        display: none;
+    }
+
+    .topnav .menu-center .right {
+        display: none;
+    }
+
+    .topnav .menu-bar i {
+        display: block;
+        position: absolute;
+        right: 40px;
+        top: 19px;
+        outline: none;
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .bars .menu-bar i {
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top: 1.2rem;
+        color: #fff;
+        font-size: 2rem;
+        outline: none;
+    }
+
+    .menuArea {
+        position: relative;
+        top: 10%;
+        width: 100%;
+    }
+
+
+
+    #menuContent {
+        position: absolute;
+        padding-top: 50px;
+        width: 100%;
+        height: 60vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+
+    }
+
+    #menuContent ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    #menuContent ul li {
+        display: block;
+        line-height: 3;
+
+    }
+
+    #menuContent ul li a {
+        color: #fff;
+        margin-top: 50px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    #menuContent ul li:hover {
+        background-color: rgba(77, 76, 75, 0.5);
+        transition: 0.3s;
+    }
+
+
+
+}
+
+@media screen and (max-width: 480px) {}
