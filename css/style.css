@@ -11,6 +11,7 @@ header {
     background-position: center;
     background-size: cover;
     height: 100vh;
+    transform: 0.5s;
 
 }
 
@@ -78,11 +79,10 @@ header {
     text-align: center;
     width: 100%;
     padding: 40px;
-    /*    background-color: rgba(0, 0, 0, 0.4);*/
 }
 
 .banner-content h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #fff;
     text-transform: capitalize;
     padding-top: 30px;
