@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #000;
-}
-
 header {
     background-image:
         linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
@@ -90,7 +86,7 @@ header {
     font-size: 2.5rem;
     color: #fff;
     text-transform: capitalize;
-    padding-top: 30px;
+    padding: 30px 10px 0px 10px;
     font-family: 'Candal';
     margin-bottom: 15px;
     line-height: 2;
@@ -171,10 +167,10 @@ header {
     }
 
 
-    .menuBar {
+    .menuBar i {
         position: absolute;
         right: 40px;
-        top: 10px;
+        top: 20px;
         color: #fff;
         z-index: 1;
     }
