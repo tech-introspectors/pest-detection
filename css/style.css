@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     background-image:
         linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
@@ -151,6 +155,116 @@ header {
 }
 
 
+
+/*//// Team-section css ////*/
+.team-section {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.team-content {
+    text-align: center;
+    margin-top: 5%;
+
+}
+
+.team-content .row h2 {
+    padding: 80px 10px 2px 10px;
+    font-size: 2.5rem;
+    font-family: 'Candal', 'Cairo', 'Days One';
+
+}
+
+.team-content h2 .bright {
+    color: #03fc0b;
+    opacity: 0.8;
+    padding-bottom: 10px;
+    border-bottom: 4px solid black;
+    line-height: 2;
+}
+
+.team-content .row p {
+    font-size: 24px;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Cairo';
+}
+
+.team-details {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.teamMember1 {
+    width: 100%;
+}
+
+.img1 {
+    width: 40%;
+    margin-top: 35px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.img2 {
+    width: 45%;
+}
+
+.teamMember1 h3 {
+    font-family: 'Cairo';
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.team-desc {
+    padding: 20px 70px;
+}
+
+.team-role {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Day One';
+}
+
+.icon-team a {
+    color: black;
+    font-size: 20px;
+    padding: 0px 5px;
+}
+
+.icon-team a:hover {
+    color: #03fc0b;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ////NavBar in mobile view //// */
 
 @media(max-width:1031px) {
@@ -168,7 +282,7 @@ header {
 
 
     .menuBar i {
-        position: absolute;
+        position: fixed;
         right: 40px;
         top: 20px;
         color: #fff;
@@ -222,6 +336,14 @@ header {
         margin: 5% 0;
     }
 
+}
+
+@media (max-width:990px) {
+    .team-details {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+    }
 }
 
 @media (min-width:294px) and (max-width:360px) {
