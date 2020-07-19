@@ -114,7 +114,7 @@ header {
     display: none;
 }
 
-#menuContent {
+.navbarcontent {
     display: none;
 }
 
@@ -166,68 +166,59 @@ header {
         display: none;
     }
 
-    .topnav .menu-bar i {
+    .navbarcontent {
         display: block;
+    }
+
+
+    .menuBar {
         position: absolute;
         right: 40px;
-        top: 19px;
-        outline: none;
+        top: 10px;
         color: #fff;
-        font-size: 30px;
+        z-index: 1;
     }
 
-    .bars .menu-bar i {
-        display: block;
-        position: absolute;
-        right: 2rem;
-        top: 1.2rem;
-        color: #fff;
-        font-size: 2rem;
-        outline: none;
+    .overlay {
+        height: 0%;
+        width: 100%;
         position: fixed;
         z-index: 1;
-    }
-
-    .menuArea {
-        position: relative;
-        top: 7%;
-        width: 100%;
-    }
-
-    #menuContent {
-        position: absolute;
-        padding-top: 50px;
-        width: 100%;
-        height: 60vh;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
         background-color: rgba(0, 0, 0, 0.9);
-        z-index: 1;
-
+        overflow-y: hidden;
+        transition: 0.5s;
     }
 
-    #menuContent ul {
-        list-style: none;
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
         text-align: center;
-        font-weight: 600;
+        margin-top: 30px;
     }
 
-    #menuContent ul li {
-        display: block;
-        line-height: 3;
-        outline: none;
-
-    }
-
-    #menuContent ul li a {
-        color: #fff;
-        margin-top: 50px;
+    .overlay a {
+        padding: 8px;
         text-decoration: none;
-        font-size: 20px;
-        letter-spacing: 2px;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
     }
 
-    #menuContent ul li:hover {
-        background-color: rgba(77, 76, 75, 0.5);
-        transition: 0.3s;
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
     }
 
     .arrow {
@@ -257,11 +248,7 @@ header {
 }
 
 @media (max-width:414px) {
-    .menuArea {
-        position: relative;
-        top: 7%;
-        width: 100%;
-    }
+
 
     .banner-content {
         position: relative;
