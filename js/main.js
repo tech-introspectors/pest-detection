@@ -1,8 +1,9 @@
 $(function () {
     menu = $('#menuContent');
 
-    $('#menuToggle').on('click', function (e) {
+    $('#button').on('click', function (e) {
         e.preventDefault();
+        $(this).css("cursor", "pointer");
         menu.slideToggle();
     });
 

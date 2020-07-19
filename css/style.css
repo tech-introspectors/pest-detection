@@ -190,7 +190,7 @@ header {
 
     .menuArea {
         position: relative;
-        top: 10%;
+        top: 7%;
         width: 100%;
     }
 
@@ -259,7 +259,7 @@ header {
 @media (max-width:414px) {
     .menuArea {
         position: relative;
-        top: 9%;
+        top: 7%;
         width: 100%;
     }
 
