@@ -237,60 +237,6 @@ header {
 
 }
 
-/*
-@media (max-width:1024px) {
-    .menuArea {
-        position: relative;
-        top: 5%;
-        width: 100%;
-    }
-
-    .banner-content h1 {
-        font-size: 3.5rem;
-        color: #fff;
-        text-transform: capitalize;
-        padding-top: 30px;
-        font-family: 'Candal';
-        margin-bottom: 15px;
-        line-height: 2;
-    }
-
-    .banner-content h1 .bright {
-        color: #04d90b;
-        padding-bottom: 10px;
-        border-bottom: 3px solid #fff;
-    }
-
-
-    .banner-content {
-        position: relative;
-        text-align: center;
-        top: 35%;
-        width: 100%;
-        height: 30%;
-        padding: 0px;
-    }
-
-    .banner-content p {
-        color: #fff;
-        font-size: 30px;
-        font-family: sans-serif;
-        font-weight: 600;
-        line-height: 1.4;
-        margin-bottom: 50px;
-    }
-
-    .arrow {
-        text-align: center;
-        margin: 15% 0;
-    }
-
-    .arrow a {
-        font-size: 0px;
-    }
-}*/
-
-
 @media (min-width:294px) and (max-width:360px) {
     .logo a {
         padding: 20px;
