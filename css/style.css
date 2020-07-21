@@ -1,3 +1,7 @@
+:root {
+    --primaryColor: #03fc0b;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -584,20 +588,106 @@ header {
 }
 
 
+/*//// Footer section css /////*/
+
+#footer-section {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: auto;
+    margin-top: 15%;
+}
+
+.footer-content {
+    padding-left: 70px;
+    padding-top: 50px;
+    padding-right: 70px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-content .sec-1 h2 {
+    color: #fff;
+    font-family: 'Cairo', 'Candal', 'Days One';
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+
+.footer-content .sec-1 p {
+    color: #fff;
+    padding: 20px 50px 15px 0px;
+    font-size: 19px;
+
+}
+
+.footer-content .sec-2 {
+    padding-right: 30px;
+}
+
+.footer-content .sec-2 h3 {
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-bottom: 1px solid var(--primaryColor);
+}
 
 
+.footer-content .sec-2 hr:before {
+    width: 117px;
+    height: 2px;
+    margin: 25px auto;
+    background-color: #53c5d5;
+}
+
+.footer-content .sec-2 ul {
+    list-style: none;
+}
+
+.footer-content .sec-2 ul hr {
+    opacity: 0.2;
+}
 
 
+.footer-content .sec-2 ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-content .sec-2 ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
 
 
+}
 
+.footer-content .sec-2 ul li a:hover {
+    border-left: 2px solid var(--primaryColor);
+    transition: 0.5s;
+    padding-left: 10px;
+}
 
+.footer-content .sec-3 {
+    padding-right: 30px;
+}
 
+.footer-content .sec-3 h3 {
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-bottom: 1px solid var(--primaryColor);
+}
 
+.footer-content .sec-3 p {
+    padding-top: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-family: sans-serif;
+}
 
-
-
-
+.footer-content .sec-3 p i {
+    color: var(--primaryColor);
+}
 
 
 
@@ -695,6 +785,16 @@ header {
     #team-section {
         margin-top: 70%;
     }
+
+    .footer-content {
+        padding-left: 40px;
+        padding-top: 50px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
 
 @media (max-width:990px) {
@@ -702,6 +802,13 @@ header {
         display: grid;
         grid-template-columns: auto;
         padding: 10px;
+    }
+
+    #footer-section {
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: auto;
+        margin-top: 100%;
     }
 }
 
@@ -721,6 +828,24 @@ header {
         text-align: center;
         margin: 10% 0;
     }
+
+    #footer-section {
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: auto;
+        margin-top: 170%;
+    }
+
+    .footer-content {
+        padding-left: 30px;
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+
+
+    }
+
+
 
 }
 
@@ -763,4 +888,25 @@ header {
         color: #fff;
         font-family: 'Cairo', 'Candal', 'sans-serif';
     }
+
+
+}
+
+@media (min-width:361px) and (max-width:476px) {
+    #footer-section {
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: auto;
+        margin-top: 120%;
+    }
+
+    .footer-content {
+        padding-left: 30px;
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+
+
+    }
+
 }
