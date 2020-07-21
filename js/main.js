@@ -6,6 +6,24 @@ function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 }
 
+// cursor motion
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: " + (e.pageY - 260) + "px; left: " + (e.pageX - 10) + "px;");
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+});
+
+
+
+
 // Get the modal
 var modal = document.getElementById("myModal");
 var modal1 = document.getElementById("myModal1");
@@ -22,34 +40,34 @@ var modalImg2 = document.getElementById("img03");
 var captionText = document.getElementById("caption");
 var captionText1 = document.getElementById("caption1");
 var captionText2 = document.getElementById("caption2");
-img.onclick = function () {
+img.onclick = function() {
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
 }
 
-img1.onclick = function () {
+img1.onclick = function() {
     modal1.style.display = "block";
     modalImg1.src = this.src;
     captionText1.innerHTML = this.alt;
 }
 
-img2.onclick = function () {
+img2.onclick = function() {
     modal2.style.display = "block";
     modalImg2.src = this.src;
     captionText2.innerHTML = this.alt;
 }
 
 var span = document.getElementsByClassName("close")[0];
-span.onclick = function () {
+span.onclick = function() {
     modal.style.display = "none";
 }
 var span = document.getElementsByClassName("close1")[0];
-span.onclick = function () {
+span.onclick = function() {
     modal1.style.display = "none";
 }
 
 var span = document.getElementsByClassName("close2")[0];
-span.onclick = function () {
+span.onclick = function() {
     modal2.style.display = "none";
 }
