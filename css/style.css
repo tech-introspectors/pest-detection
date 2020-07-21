@@ -158,6 +158,7 @@ header {
 
 /*About us---------------------->>>>>>*/
 
+
 /*/////  NavBar css section /////*/
 
 .topnav {
@@ -292,6 +293,183 @@ header {
         transform: translateY(-15px);
     }
 }
+
+
+
+
+
+/*/// Layout-section ///*/
+#layout-section {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.layout-content {
+    text-align: center;
+    margin-top: 5%;
+
+}
+
+.layout-content .row h2 {
+    padding: 80px 10px 2px 10px;
+    font-size: 2.5rem;
+    font-family: 'Candal', 'Cairo', 'Days One';
+
+}
+
+.layout-content h2 .bright {
+    color: #03fc0b;
+    opacity: 0.8;
+    padding-bottom: 10px;
+    border-bottom: 4px solid black;
+    line-height: 2;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    margin-top: 40px;
+}
+
+.main-layout .column img {
+    width: 350px;
+    padding: 10px;
+}
+
+.main-layout .column img:hover {
+    box-shadow: 20px 20px 20px gray;
+    cursor: pointer;
+}
+
+.main-layout .column h2 {
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'Day One';
+}
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    z-index: 1;
+
+    padding-top: 100px;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    height: 100%;
+
+    overflow: auto;
+
+    background-color: rgb(0, 0, 0);
+
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content1 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content2 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.modal-content1,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.modal-content2,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close,
+.close1,
+.close2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close1:hover,
+.close1:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.close2:hover,
+.close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 
 
 
@@ -475,6 +653,20 @@ header {
         margin: 5% 0;
     }
 
+    .main-layout {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 10px;
+        margin-top: 40px;
+    }
+
+    .main-layout .column img {
+        width: 50%;
+    }
+
+    #team-section {
+        margin-top: 70%;
+    }
 }
 
 @media (max-width:990px) {
