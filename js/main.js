@@ -20,6 +20,8 @@ var modalImg1 = document.getElementById("img02");
 var modalImg2 = document.getElementById("img03");
 
 var captionText = document.getElementById("caption");
+var captionText1 = document.getElementById("caption1");
+var captionText2 = document.getElementById("caption2");
 img.onclick = function () {
     modal.style.display = "block";
     modalImg.src = this.src;
@@ -29,13 +31,13 @@ img.onclick = function () {
 img1.onclick = function () {
     modal1.style.display = "block";
     modalImg1.src = this.src;
-    captionText.innerHTML = this.alt;
+    captionText1.innerHTML = this.alt;
 }
 
 img2.onclick = function () {
     modal2.style.display = "block";
     modalImg2.src = this.src;
-    captionText.innerHTML = this.alt;
+    captionText2.innerHTML = this.alt;
 }
 
 var span = document.getElementsByClassName("close")[0];
