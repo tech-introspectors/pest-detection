@@ -680,6 +680,7 @@ header {
 
 .footer-content .sec-2 {
     padding-right: 30px;
+    padding-bottom: 10px;
 }
 
 .footer-content .sec-2 h3 {
@@ -742,6 +743,21 @@ header {
 
 .footer-content .sec-3 p i {
     color: var(--primaryColor);
+}
+
+
+/* /// footer-copyRight /// */
+
+.footer-copyRight {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+}
+
+.footer-copyRight h4 {
+    padding: 15px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
