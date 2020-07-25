@@ -13,27 +13,77 @@ html {
 }
 
 header {
-    background-image:
-        linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-        url('../images/banner_bg.jpg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('../images/banner_bg.jpg');
     background-position: center;
     background-size: cover;
     height: 100vh;
     transform: 0.5s;
-
 }
+
+
+/* Intro-section -------------------------->>>>>>>>*/
+
 .intro-content {
-    background-image:
-        linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-        url('../images/light.jpg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('../images/light.jpg');
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
     transform: 0.5s;
-
 }
+
+.intro-content {
+    position: relative;
+    text-align: center;
+    bottom: 50%;
+    width: 100%;
+}
+
+.intro-content h2 {
+    font-size: 2.5rem;
+    color: #04d90b;
+    ;
+    text-transform: capitalize;
+    padding: 80px 10px 0px 10px;
+    font-family: 'Candal';
+    margin-bottom: 15px;
+    line-height: 2;
+}
+
+.intro-content h2 .bright {
+    color: #fff;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #fff;
+}
+
+.intro-content p {
+    color: #fff;
+    font-size: 20px;
+    padding: 50px 80px 0px 80px;
+    font-family: sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.btn-know-more {
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    font-family: 'Days One';
+    margin-top: 5rem;
+    color: #fff;
+    text-decoration: none;
+    background: #079449;
+}
+
+.btn-know-more:hover {
+    background-color: #10e673;
+    transition: 0.5s;
+}
+
 
 /*About us section*/
+
 
 /*About us---------------------->>>>>>*/
 
@@ -66,7 +116,6 @@ header {
 
 .topnav .menu-center {
     text-align: center;
-
 }
 
 .topnav .menu-center a {
@@ -84,7 +133,6 @@ header {
     border-bottom: 2px solid #03fc0b;
     transition: 0.5s;
 }
-
 
 .topnav .menu-center .right {
     float: right;
@@ -128,48 +176,7 @@ header {
     font-weight: 600;
     line-height: 1.4;
 }
-.intro-content {
-    position: relative;
-    text-align: center;
-    bottom:50%;
-    width: 100%;
-}
 
-.intro-content h2 {
-    font-size: 2.5rem;
-    color: #04d90b;;
-    text-transform: capitalize;
-    padding: 80px 10px 0px 10px;
-    font-family: 'Candal';
-    margin-bottom: 15px;
-    line-height: 2;
-}
-.intro-content h2 .bright {
-    color: #fff;
-    padding-bottom: 10px;
-    border-bottom: 3px solid #fff;
-}    
-.intro-content p {
-    color: #fff;
-    font-size: 20px;
-    padding: 50px 80px 0px 80px;
-    font-family: sans-serif;
-    font-weight: 600;
-    line-height: 1.4;
-}
-.btn-know-more {
-
-    display: inline-block;
-    padding: 8px 32px;
-    border-radius: 50px;
-    transition: 0.5s;
-    margin: 10px;
-    color: #fff;
-    background: #18d26e;
-  }
-  
-  
-  }
 .bars .menu-bar i {
     display: none;
 }
@@ -178,7 +185,9 @@ header {
     display: none;
 }
 
+
 /*//// arrow bounce ////*/
+
 .arrow {
     text-align: center;
     margin: 50px 0;
@@ -196,7 +205,6 @@ header {
 }
 
 @keyframes bounce {
-
     0%,
     20%,
     50%,
@@ -204,50 +212,50 @@ header {
     100% {
         transform: translateY(0);
     }
-
     40% {
         transform: translateY(-30px);
     }
-
     60% {
         transform: translateY(-15px);
     }
 }
 
 .Description-content {
-    background-image:
-        linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-        url('../images/bg1.jpg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('../images/bg1.jpg');
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
     transform: 0.5s;
 }
+
 .Description-content {
     position: relative;
     text-align: center;
-    bottom:50%;
+    bottom: 50%;
     width: 100%;
 }
 
 .Description-content h2 {
     font-size: 2.5rem;
-    color: #04d90b;;
+    color: #04d90b;
+    ;
     text-transform: capitalize;
     padding: 80px 10px 0px 10px;
     font-family: 'Candal';
     margin-bottom: 15px;
     line-height: 2;
 }
+
 .Description-content h2 .bright {
     color: #fff;
     padding-bottom: 10px;
     border-bottom: 3px solid #fff;
-}    
+}
+
 .Description-content p {
     color: #fff;
     font-size: 20px;
-    padding: 20px 80px 0px 80px;
+    padding: 20px 80px 10px 80px;
     font-family: sans-serif;
     font-weight: 600;
     line-height: 1.4;
@@ -255,25 +263,23 @@ header {
 }
 
 
-
 /*/// Layout-section ///*/
+
 #layout-section {
     width: 100%;
-    height: 90vh;
+    height: 120vh;
     position: relative;
 }
 
 .layout-content {
     text-align: center;
-    margin-top: 0%;
-
+    margin-top: 10%;
 }
 
 .layout-content .row h2 {
     padding: 10px 4px 2px 40px;
     font-size: 2.5rem;
     font-family: 'Candal', 'Cairo', 'Days One';
-
 }
 
 .layout-content h2 .bright {
@@ -283,6 +289,7 @@ header {
     border-bottom: 4px solid black;
     line-height: 2;
 }
+
 .layout-content p {
     color: #000000;
     font-size: 20px;
@@ -292,7 +299,6 @@ header {
     line-height: 1.4;
     text-align: left;
 }
-
 
 .main-layout {
     display: grid;
@@ -319,25 +325,18 @@ header {
 
 .modal {
     display: none;
-
     position: fixed;
-
     z-index: 1;
-
     padding-top: 100px;
-
     left: 0;
     top: 0;
     width: 100%;
-
     height: 100%;
-
     overflow: auto;
-
     background-color: rgb(0, 0, 0);
-
     background-color: rgba(0, 0, 0, 0.9);
 }
+
 
 /* Modal Content (Image) */
 
@@ -355,8 +354,8 @@ header {
     max-width: 700px;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
 
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
 
 #caption1 {
     margin: auto;
@@ -383,6 +382,7 @@ header {
     padding: 10px 0;
     height: 150px;
 }
+
 
 /* Add Animation - Zoom in the Modal */
 
@@ -402,13 +402,14 @@ header {
     from {
         transform: scale(0)
     }
-
     to {
         transform: scale(1)
     }
 }
 
+
 /* The Close Button */
+
 .close1,
 .close2 {
     position: absolute;
@@ -427,7 +428,6 @@ header {
     cursor: pointer;
 }
 
-
 .close2:hover,
 .close2:focus {
     color: #bbb;
@@ -437,37 +437,40 @@ header {
 
 
 /*////Our solution/////*/
+
 .solution-content {
-    background-image: 
-    linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-    url('../images/canvas.png');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('../images/canvas.png');
     background-color: #E9633B;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
     transform: 0.5s;
 }
+
 .solution-content {
     position: relative;
     text-align: center;
-    bottom:50%;
+    bottom: 50%;
     width: 100%;
 }
 
 .solution-content h2 {
     font-size: 2.5rem;
-    color: #04d90b;;
+    color: #04d90b;
+    ;
     text-transform: capitalize;
     padding: 80px 10px 0px 10px;
     font-family: 'Candal';
     margin-bottom: 15px;
     line-height: 2;
 }
+
 .solution-content h2 .bright {
     color: #fff;
     padding-bottom: 10px;
     border-bottom: 3px solid #fff;
-}    
+}
+
 .solution-content p {
     color: #fff;
     font-size: 20px;
@@ -475,18 +478,21 @@ header {
     font-family: sans-serif;
     font-weight: 600;
     line-height: 1.4;
+    width: 100%;
     text-align: left;
 }
-.solution-content > img {
+
+.solution-content img {
     float: right;
     height: auto;
-    max-width:100%;
-    margin-top: -310px;
+    max-width: 20%;
+    margin-top: -35%;
     margin-right: 65px;
-  }
+}
 
 
 /*//// Team-section css ////*/
+
 .team-section {
     width: 100%;
     height: 90vh;
@@ -496,14 +502,12 @@ header {
 .team-content {
     text-align: center;
     margin-top: 5%;
-
 }
 
 .team-content .row h2 {
     padding: 80px 10px 2px 10px;
     font-size: 2.5rem;
     font-family: 'Candal', 'Cairo', 'Days One';
-
 }
 
 .team-content h2 .bright {
@@ -598,7 +602,6 @@ header {
     color: #fff;
     padding: 20px 50px 15px 0px;
     font-size: 19px;
-
 }
 
 .footer-content .sec-2 {
@@ -611,7 +614,6 @@ header {
     font-family: sans-serif;
     border-bottom: 1px solid var(--primaryColor);
 }
-
 
 .footer-content .sec-2 hr:before {
     width: 117px;
@@ -628,7 +630,6 @@ header {
     opacity: 0.2;
 }
 
-
 .footer-content .sec-2 ul li {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -638,8 +639,6 @@ header {
     text-decoration: none;
     color: #fff;
     font-family: sans-serif;
-
-
 }
 
 .footer-content .sec-2 ul li a:hover {
@@ -670,6 +669,7 @@ header {
     color: var(--primaryColor);
 }
 
+
 /* /// footer-copyRight /// */
 
 .footer-copyRight {
@@ -683,22 +683,20 @@ header {
     font-size: 15px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
 /* ////NavBar in mobile view //// */
 
 @media(max-width:1031px) {
     .topnav .menu-center {
         display: none;
     }
-
     .topnav .menu-center .right {
         display: none;
     }
-
     .navbarcontent {
         display: block;
     }
-
-
     .menuBar i {
         position: fixed;
         right: 40px;
@@ -706,7 +704,6 @@ header {
         color: #fff;
         z-index: 1;
     }
-
     .overlay {
         height: 0%;
         width: 100%;
@@ -719,7 +716,6 @@ header {
         overflow-y: hidden;
         transition: 0.5s;
     }
-
     .overlay-content {
         position: relative;
         top: 25%;
@@ -727,7 +723,6 @@ header {
         text-align: center;
         margin-top: 30px;
     }
-
     .overlay a {
         padding: 8px;
         text-decoration: none;
@@ -736,39 +731,51 @@ header {
         display: block;
         transition: 0.3s;
     }
-
     .overlay a:hover,
     .overlay a:focus {
         color: #f1f1f1;
     }
-
     .overlay .closebtn {
         position: absolute;
         top: 20px;
         right: 45px;
         font-size: 60px;
     }
-
     .arrow {
         text-align: center;
         margin: 5% 0;
     }
-
     .main-layout {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 10px;
         margin-top: 40px;
     }
-
     .main-layout .column img {
         width: 50%;
     }
-
-    #team-section {
-        margin-top: 70%;
+    #layout-section {
+        width: 100%;
+        height: 180vh;
+        position: relative;
     }
-
+    .solution-content {
+        height: 250vh;
+    }
+    .solution-content p {
+        width: 140%;
+    }
+    .solution-content img {
+        float: left;
+        height: auto;
+        max-width: 50%;
+        margin-left: 25%;
+        margin-top: 15%;
+    }
+    #team-section {
+        margin-top: 20%;
+        /* 70% */
+    }
     .footer-content {
         padding-left: 40px;
         padding-top: 50px;
@@ -777,7 +784,6 @@ header {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-
 }
 
 @media (max-width:990px) {
@@ -786,7 +792,6 @@ header {
         grid-template-columns: auto;
         padding: 10px;
     }
-
     #footer-section {
         background-color: rgba(0, 0, 0, 0.9);
         width: 100%;
@@ -806,35 +811,25 @@ header {
         color: #fff;
         font-family: 'Cairo', 'Candal', 'sans-serif';
     }
-
     .arrow {
         text-align: center;
         margin: 10% 0;
     }
-
     #footer-section {
         background-color: rgba(0, 0, 0, 0.9);
         width: 100%;
         height: auto;
         margin-top: 170%;
     }
-
     .footer-content {
         padding-left: 30px;
         padding-top: 50px;
         padding-right: 30px;
         padding-bottom: 20px;
-
-
     }
-
-
-
 }
 
 @media (max-width:414px) {
-
-
     .banner-content {
         position: relative;
         text-align: center;
@@ -843,7 +838,6 @@ header {
         height: 30%;
         padding: 0px;
     }
-
     .banner-content p {
         color: #fff;
         font-size: 20px;
@@ -852,12 +846,10 @@ header {
         line-height: 1.4;
         margin-bottom: 50px;
     }
-
     .arrow {
         text-align: center;
         margin: 15% 0;
     }
-
 }
 
 @media(max-width:390px) {
@@ -871,8 +863,6 @@ header {
         color: #fff;
         font-family: 'Cairo', 'Candal', 'sans-serif';
     }
-
-
 }
 
 @media (min-width:361px) and (max-width:476px) {
@@ -882,15 +872,10 @@ header {
         height: auto;
         margin-top: 120%;
     }
-
     .footer-content {
         padding-left: 30px;
         padding-top: 50px;
         padding-right: 30px;
         padding-bottom: 20px;
-
-
     }
-    
-
 }
